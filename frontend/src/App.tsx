@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import { loadGeneralInfo } from "./store/actions/generalInfo.actions";
 import { useEffect } from "react";
 import Head2Head from "./pages/Head2Head";
+import TeamsPage from "./cmps/Teams/TeamsPage";
 
 function App() {
   useEffect(() => {
@@ -21,11 +22,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/teams" element={<Teams />} />
+          <Route path="/teams/:id" element={<TeamsPage />} />
           <Route path="/players" element={<Players />} />
-          <Route
-            path="/Head2Head"
-            element={<Head2Head loadGeneralInfo={loadGeneralInfo} />}
-          />
+          <Route path="/Head2Head" element={<Head2Head />} />
         </Routes>
       </main>
 

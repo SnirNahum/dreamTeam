@@ -9,7 +9,7 @@ export default function AppHeader() {
       <NavLink to="/">
         <h1 className="logo">Dream-team</h1>
       </NavLink>
-      <nav className="app-header-links">
+      <nav className="nav-item">
         <NavLink to="/" className={location.pathname === "/" ? "active" : ""}>
           Dashboard
         </NavLink>

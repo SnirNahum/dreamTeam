@@ -59,7 +59,7 @@ export default function AppHeaderResponsive() {
       <NavLink to="/Head2Head" onClick={closeMenu}>
         Head2Head
       </NavLink>
-      <DownloadApp />
+      {/* <DownloadApp /> */}
     </Menu>
   );
 }

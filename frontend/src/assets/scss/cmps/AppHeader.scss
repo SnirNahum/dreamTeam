@@ -2,8 +2,9 @@
   display: flex;
   width: 100%;
   padding: 10px;
+  font-weight: 400;
 
-  .app-header-links {
+  .nav-item {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -12,18 +13,19 @@
       padding: 0.6em;
     }
     a:hover {
-      text-decoration: underline;
     }
   }
 }
 
 .active {
   font-weight: 600;
-  text-decoration: underline;
+  background-color: rgba(168, 239, 255, 0.9);
+  border-radius: 16px;
 }
 
 .logo {
   text-decoration: none;
+  background-color: #fff;
 }
 
 .bm-burger-button {
