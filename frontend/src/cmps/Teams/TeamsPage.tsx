@@ -5,17 +5,17 @@ import PointsLeaderBoards from "./PointsLeaderBoards";
 import TeamTable from "./TeamTable";
 
 export default function TeamsPage() {
-  const { id } = useParams();
+  const { teamId } = useParams();
   const teams = useSelector((state) => state.fplModule.teams);
   const players = useSelector((state) => state.fplModule.players);
   const [teamPlayers, setTeamPlayers] = useState([]);
 
   useEffect(() => {
-    const parsedId = parseInt(id);
+    const parsedId = parseInt(teamId);
 
     const foundPlayers = players.filter((player) => player.team === parsedId);
     setTeamPlayers(foundPlayers);
-  }, [id, teams, players]);
+  }, [teamId, teams, players]);
 
   return (
     <div className="TeamPage">

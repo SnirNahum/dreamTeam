@@ -21,8 +21,13 @@ body {
 #root {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "app-header"
+    "main"
+    "appHeaderMobile";
   justify-items: center;
   margin: 20px;
+  height: 100vh;
 }
 
 main {
@@ -30,6 +35,7 @@ main {
   justify-content: center;
   width: 100%;
   max-width: 1200px;
+  grid-area: main;
 }
 
 img {
