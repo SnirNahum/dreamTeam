@@ -5,7 +5,7 @@ export default function AppHeader() {
 
   return (
     <header className="app-header full flex">
-      <NavLink to="/">
+      <NavLink to="/" className="logo-link">
         {/* <h1 className="logo">Dream-team</h1>
          */}
         <img

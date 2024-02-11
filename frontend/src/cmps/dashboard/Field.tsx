@@ -2,8 +2,6 @@ import { playerPositions } from "../../services/utilService";
 import FieldPosition from "./FieldPosition";
 
 export default function Field({ dreamTeamPlayers }: any) {
-  {
-  }
   return (
     <section className="field-container">
       {Object.keys(dreamTeamPlayers).map((playerPosition) => (
