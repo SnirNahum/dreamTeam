@@ -1,11 +1,13 @@
 .field-container {
+  // flex: 1;
   display: flex;
   flex-direction: column;
-  border-radius: 6px;
-  width: 500px;
+  // max-width: 600px;
+  width: 300px;
   height: 500px;
-  background: url('https://fantasy.premierleague.com/static/media/pitch-default.dab51b01.svg') center top / 625px 460px  no-repeat;
-  // background-size: 625px 460px;
+  background: url("https://res.cloudinary.com/datldedpm/image/upload/v1695031264/c5boynqdsseunzeyxk4h.png")
+    no-repeat;
+  background-size: 100% 100%;
 
   .dashboard-gk,
   .dashboard-def,
@@ -13,7 +15,7 @@
   .dashboard-at {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 .dashboard-player {
@@ -27,11 +29,5 @@
   }
   img {
     width: 40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .field-container {
-  width: 100%;
   }
 }
