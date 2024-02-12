@@ -1,0 +1,122 @@
+@media screen and (max-width: 768px) {
+  #root {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    margin: 0;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .app-header {
+    max-width: 94%;
+    padding: 0;
+  }
+  .nav-item a,
+  .nav-item {
+    display: none;
+  }
+  .active {
+    background-color: #373a47;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: 1em;
+  }
+  .table-header {
+    border-spacing: 0;
+    background: linear-gradient(
+      to right,
+      #00ff87,
+      #02efff,
+      #627bff,
+      // rgba(2, 239, 255, 0)
+    );
+  }
+  .players-table {
+    max-width: 100%;
+  }
+  .players-table .player-table-container {
+    width: 100%;
+  }
+  .players-table .player-table-container th,
+  .players-table .player-table-container td {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .player-cell {
+    min-width: 100%;
+  }
+  .player-cell img {
+    padding: 5px;
+    width: 1.8rem;
+  }
+  .search-bar-container {
+    height: 20px;
+    width: 97%;
+    background: linear-gradient(
+      to right,
+      #00ff87,
+      #02efff,
+      #627bff,
+      // rgba(2, 239, 255, 0)
+    );
+  }
+  .active.search-bar-container {
+    width: 30px;
+    height: 20px;
+  }
+  .magnifier {
+    left: 8px;
+  }
+
+  .modal-content {
+    width: 300px;
+    height: 580px;
+  }
+  .player-preview-name {
+    img {
+      width: 30%;
+    }
+  }
+
+  .player-preview-matches {
+    margin-top: 20px;
+    padding: 0;
+    gap: 0;
+  }
+  .future-match-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .player-news {
+    font-size: 11px;
+  }
+
+  .skeleton-players-page {
+    margin-right: 13px;
+
+    span {
+      flex-direction: column;
+      width: 132px;
+      height: 200px;
+      gap: 1px;
+    }
+  }
+  .player-list {
+    width: 94%;
+
+    .skeleton-player-list span {
+      width: 100%;
+      height: 35px;
+      &:first-child {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .past-match-points span {
+    font-size: 14px;
+  }
+}
