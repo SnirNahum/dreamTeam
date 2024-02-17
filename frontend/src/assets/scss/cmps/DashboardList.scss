@@ -1,5 +1,4 @@
 .field-container {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   border-radius: 6px;
@@ -7,17 +6,6 @@
   height: 500px;
   background: url('https://fantasy.premierleague.com/static/media/pitch-default.dab51b01.svg') center top / 625px 460px  no-repeat;
   // background-size: 625px 460px;
-=======
-  // flex: 1;
-  display: flex;
-  flex-direction: column;
-  // max-width: 600px;
-  width: 300px;
-  height: 500px;
-  background: url("https://res.cloudinary.com/datldedpm/image/upload/v1695031264/c5boynqdsseunzeyxk4h.png")
-    no-repeat;
-  background-size: 100% 100%;
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
 
   .dashboard-gk,
   .dashboard-def,
@@ -25,11 +13,7 @@
   .dashboard-at {
     display: flex;
     width: 100%;
-<<<<<<< HEAD
     justify-content: space-around;
-=======
-    justify-content: center;
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
   }
 }
 .dashboard-player {
@@ -45,12 +29,9 @@
     width: 40px;
   }
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 768px) {
   .field-container {
   width: 100%;
   }
 }
-=======
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17

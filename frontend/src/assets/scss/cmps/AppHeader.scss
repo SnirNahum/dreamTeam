@@ -10,18 +10,10 @@
     align-items: center;
     flex-grow: 1;
     margin-left: 1.5rem;
-<<<<<<< HEAD
 
     a {
       padding: 0.6em;
     }
-=======
-    a {
-      padding: 0.6em;
-    }
-    a:hover {
-    }
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
   }
 }
 
@@ -29,7 +21,6 @@
   font-weight: 600;
   background-color: rgba(168, 239, 255, 0.9);
   border-radius: 16px;
-<<<<<<< HEAD
 
   // .logo {
   //   background-color: white;
@@ -38,50 +29,27 @@
 }
 .logo-link{
   background-color: transparent;
-=======
-}
-
-.logo {
-  text-decoration: none;
-  // background-color: rgb(98 144 214);
-  background-color: #fff;
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
 }
 
 .bm-burger-button {
   display: none;
 }
-<<<<<<< HEAD
 
 .mobile {
   display: none;
 }
 
-=======
-.mobile {
-  display: none;
-}
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
 @media screen and (max-width: 768px) {
   .app-header {
     display: flex;
     background-color: #1e1e1e;
     min-width: 100%;
-<<<<<<< HEAD
     height: 90%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-=======
-    flex-direction: column;
-    /* display: none; */
-    height: 72px;
-    align-items: center;
-    justify-content: center;
-  }
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
   .mobile {
     display: block;
     grid-area: appHeaderMobile;
@@ -91,7 +59,6 @@
     align-items: center;
     bottom: 0;
     width: 100%;
-<<<<<<< HEAD
     background-color: #1e1e1e;
     color: white;
     z-index: 1000;
@@ -107,18 +74,3 @@
   }
 
 }
-=======
-    // height: 60px;
-    background-color: #1e1e1e;
-    color: white;
-    z-index: 1000;
-    & > * {
-      padding: 10px;
-      //   padding: 5px;
-    }
-  }
-  .logo {
-    background-color: #1e1e1e;
-  }
-}
->>>>>>> 0e250b1f6ae95a4904dd60ca0cec5f5e35c9ec17
