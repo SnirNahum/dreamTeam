@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import { getTeamImg } from "../services/utilService";
 import Skeleton from "react-loading-skeleton";
 import { useState, useEffect } from "react";
-import TeamsPage from "../cmps/Teams/TeamsPage";
 import { useNavigate } from "react-router-dom";
 
 export default function Teams() {
@@ -13,7 +12,7 @@ export default function Teams() {
   useEffect(() => {
     setIsLoading(false);
   }, [teams]);
-  function handleClick(team) {
+  function handleClick(team:any) {
     navigate(`./${team.id}`);
   }
   if (!teams) return <div></div>;

@@ -64,7 +64,7 @@ export default function TeamTable({
   const [order, setOrder] = React.useState<Order>("asc");
   const [orderBy, setOrderBy] = React.useState<keyof TeamPlayer>("web_name");
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
   const handleRequestSort = (
     event: React.MouseEvent<unknown>,
@@ -178,3 +178,5 @@ export default function TeamTable({
     </Paper>
   );
 }
+
+

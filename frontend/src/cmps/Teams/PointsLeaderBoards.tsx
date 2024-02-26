@@ -12,7 +12,7 @@ export default function PointsLeaderBoards({ teamPlayers }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="PointsLeaderBoards">
       <Card
         sx={{
           minWidth: 330,

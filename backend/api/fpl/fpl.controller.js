@@ -8,7 +8,7 @@ export async function getGeneralInfo(req, res) {
     res.json(generalInfo);
   } catch (err) {
     logger.error("Failed to get general info", err);
-    res.status(400).send({ err: "Failed to get general info" });
+    res.status(400).send({ err: "Failed to get general info" },err);
   }
 }
 export async function getPlayerInfo(req, res) {

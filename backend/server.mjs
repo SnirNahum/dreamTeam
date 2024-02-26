@@ -21,6 +21,7 @@ if (process.env.NODE_ENV === "production") {
       "http://localhost:5173",
       "http://localhost:3030",
       "http://127.0.0.1:3030",
+      "http://10.100.102.6:5173",
       "https://dreamteam-yidh.onrender.com/",
     ],
     credentials: true,
