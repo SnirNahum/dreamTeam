@@ -23,6 +23,8 @@ if (process.env.NODE_ENV === "production") {
       "http://10.100.102.7:5173",
       "http://10.100.102.7:3030",
       "https://dreamteam-yidh.onrender.com/",
+      "https://dreamteam-yidh.onrender.com/#/",
+      "https://dreamteam-yidh.onrender.com",
     ],
     credentials: true,
   };
