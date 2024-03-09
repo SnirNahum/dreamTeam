@@ -30,7 +30,6 @@ function App() {
         </Routes>
       </main>
 
-      <footer>{/* <section>CoffeeRights 2023 &copy;</section> */}</footer>
     </Router>
   );
 }
