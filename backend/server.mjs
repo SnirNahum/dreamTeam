@@ -18,18 +18,11 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve("public")));
   const corsOptions = {
     origin: [
+      "http://127.0.0.1:3000",
+      "http://localhost:3000",
       "http://127.0.0.1:5173",
       "http://localhost:5173",
-      "http://localhost:3030",
-      "http://10.100.102.7:5173",
-      "http://10.100.102.7:3030",
-      "http://0.0.0.0:3030",
-      "http://0.0.0.0:3030/",
-      "http://0.0.0.0",
-      "https://dreamteam-yidh.onrender.com/api/",
-      "https://dreamteam-yidh.onrender.com/#/api",
-      "https://dreamteam-yidh.onrender.com/api",
-      "https://dreamteam-yidh.onrender.com/api/",
+      "https://dreamteam-yidh.onrender.com/"
     ],
     credentials: true,
   };

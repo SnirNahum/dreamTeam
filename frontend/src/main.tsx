@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App"; // Assuming App is a .tsx file
 import "./assets/scss/global.scss";
 import { Provider } from "react-redux";
