@@ -45,4 +45,5 @@ import { logger } from "./services/logger.service.js";
 const port = process.env.PORT || 3030;
 server.listen(port, () => {
   logger.info("Server is running on port: " + port);
+  console.log("Server is running on port: " + port);
 });
