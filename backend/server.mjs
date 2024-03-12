@@ -13,7 +13,7 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve("public")));
-  ("https://dreamteam-yidh.onrender.com/");
+  ("https://dreamteam-yidh.onrender.com");
 } else {
   const corsOptions = {
     origin: [
@@ -21,7 +21,11 @@ if (process.env.NODE_ENV === "production") {
       "http://localhost:5173",
       "http://localhost:3030",
       "http://127.0.0.1:3030",
-      "https://dreamteam-yidh.onrender.com/", "*"
+      "http://192.168.8.79:5173",
+      "http://192.168.8.79:3030",
+      "http://10.100.102.7:3030",
+      "http://10.100.102.7:5173",
+      "https://dreamteam-yidh.onrender.com"
     ],
     credentials: true,
   };
