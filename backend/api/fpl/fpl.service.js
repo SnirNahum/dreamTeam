@@ -1,12 +1,13 @@
 import axios from "axios";
 import { logger } from "../../services/logger.service.js";
 
-const PAGE_SIZE = 3;
+const BASE_URL = "https://fantasy.premierleague.com/api/";
 
 async function GeneralInfo() {
   try {
-    const BASE_URL = "https://fantasy.premierleague.com/api/";
-    const response = await axios.get(`${BASE_URL}bootstrap-static`);
+    const response = await axios.get(`${BASE_URL}bootstrap-static/`);
+    console.log("resopnse: ", response);
+    console.log("resopnse.data: ", response.data);
     return response.data;
   } catch (err) {
     logger.error("cannot find generalInfo", err);
@@ -15,7 +16,6 @@ async function GeneralInfo() {
 }
 async function PlayerInfo(playerId) {
   try {
-    const BASE_URL = "https://fantasy.premierleague.com/api/";
     const response = await axios.get(`${BASE_URL}element-summary/${playerId}`);
     return response.data;
   } catch (err) {

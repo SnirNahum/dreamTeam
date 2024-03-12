@@ -15,14 +15,13 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve("public")));
   ("https://dreamteam-yidh.onrender.com/");
 } else {
-  app.use(express.static(path.resolve("public")));
   const corsOptions = {
     origin: [
-      "http://127.0.0.1:3030",
-      "http://localhost:3030",
       "http://127.0.0.1:5173",
       "http://localhost:5173",
-      "https://dreamteam-yidh.onrender.com/"
+      "http://localhost:3030",
+      "http://127.0.0.1:3030",
+      "https://dreamteam-yidh.onrender.com/",
     ],
     credentials: true,
   };
@@ -45,5 +44,4 @@ import { logger } from "./services/logger.service.js";
 const port = process.env.PORT || 3030;
 server.listen(port, () => {
   logger.info("Server is running on port: " + port);
-  console.log("Server is running on port: " + port);
 });
