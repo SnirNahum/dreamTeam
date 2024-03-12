@@ -6,8 +6,6 @@ const BASE_URL = "https://fantasy.premierleague.com/api/";
 async function GeneralInfo() {
   try {
     const response = await axios.get(`${BASE_URL}bootstrap-static/`);
-    console.log("resopnse: ", response);
-    console.log("resopnse.data: ", response.data);
     return response.data;
   } catch (err) {
     logger.error("cannot find generalInfo", err);

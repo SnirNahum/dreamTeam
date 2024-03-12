@@ -9,8 +9,9 @@ const axios = Axios.create({
 });
 
 export const httpService = {
-  get(endpoint, data) {
-    return ajax(endpoint, "GET", data);
+  get(endpoint) {
+    console.log(endpoint);
+    return ajax(endpoint, "GET");
   },
   post(endpoint, data) {
     return ajax(endpoint, "POST", data);
