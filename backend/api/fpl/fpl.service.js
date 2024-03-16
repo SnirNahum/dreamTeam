@@ -3,6 +3,7 @@ import { logger } from "../../services/logger.service.js";
 
 
 async function GeneralInfo() {
+
   try {
     const response = await axios.get(`https://fantasy.premierleague.com/api/bootstrap-static/`);
     return response.data;
@@ -12,6 +13,7 @@ async function GeneralInfo() {
   }
 }
 async function PlayerInfo(playerId) {
+  console.log(playerId);
   try {
     const response = await axios.get(`https://fantasy.premierleague.com/api/element-summary/${playerId}`);
     return response.data;
